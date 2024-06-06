@@ -1,9 +1,21 @@
 import React from "react";
 
-import classes from "./brand.module.css";
+import { google, slack, shopify, dropbox, atlassian } from "./imports";
+
+import "./brand.css";
 
 const Brand = () => {
-  return <div>Brand</div>;
+  return (
+    <div className="gpt3__brand section__padding">
+      <div>
+        <img src={google} alt="google" />
+        <img src={slack} alt="slack" />
+        <img src={shopify} alt="shopify" />
+        <img src={dropbox} alt="dropbox" />
+        <img src={atlassian} alt="atlassian" />
+      </div>
+    </div>
+  );
 };
 
 export default Brand;
